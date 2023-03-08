@@ -27,11 +27,11 @@ var currentIndex = getRandomInt(0, words.length - 1);
 var div = document.getElementById("write");
 
 /**
- * ID de l'intervalle utilisé pour faire avancer le défilement du mot.
+ * Vitesse de défilement du mot.
  * 
  * @type {number}
  */
-var stepInterval = setInterval(() => { step(); }, 250);
+var stepInterval = setInterval(() => { step(); }, 400);
 
 /**
  * ID de l'intervalle utilisé pour supprimer des lettres du mot actuellement affiché.
