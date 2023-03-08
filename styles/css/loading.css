@@ -22,7 +22,7 @@
     border-radius: 50%;
     background: #fff;
     opacity: 0;
-    animation: loading 3.3s infinite ease-in-out;
+    animation: loading 1s infinite ease-in-out;
 }
 
 .loader .loader-wrapper span:nth-of-type(1) {
