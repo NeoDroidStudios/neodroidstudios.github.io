@@ -112,7 +112,7 @@ function step() {
     */
     if (counter >= words[currentIndex].length) {
         clearInterval(stepInterval);
-        delTimeout = setTimeout(() => { delIntervalCallback(); }, 20);
+        delTimeout = setTimeout(() => { delIntervalCallback(); }, 200000);
     }
     /**
      * On ajoute le caractère suivant de la chaîne de caractères dans l'élément HTML "div".
