@@ -31,7 +31,7 @@ var div = document.getElementById("write");
  * 
  * @type {number}
  */
-var stepInterval = setInterval(() => { step(); }, 100);
+var stepInterval = setInterval(() => { step(); }, 50);
 
 /**
  * ID de l'intervalle utilisé pour supprimer des lettres du mot actuellement affiché.
