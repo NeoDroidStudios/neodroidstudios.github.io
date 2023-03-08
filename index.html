@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>_home - Web Developer Portfolio</title>
     <link rel="stylesheet" href="./styles/css/theme.css">
+    <link rel="stylesheet" href="./styles/css/loading.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
 </head>
 <body>
+
+    <div class="loader" id="loader">
+        <div class="loader-wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
     <div id="header">
         <p style="color:#FFFFFF">{"&ensp;</p>
@@ -20,5 +31,15 @@
 
     <script type="text/javascript" src="./scripts/script.js"></script>
 
+    <script>
+        document.getElementById('header').style.display = "none";
+        function chargement() {
+            document.getElementById('loader').remove();
+            document.getElementById('header').style.display = "";
+        }
+        setTimeout(chargement, 2000);
+    </script>
+
 </body>
+
 </html>
