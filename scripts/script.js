@@ -31,7 +31,7 @@ var div = document.getElementById("write");
  * 
  * @type {number}
  */
-var stepInterval = setInterval(() => { step(); }, 5000);
+var stepInterval = setInterval(() => { step(); }, 200);
 
 /**
  * ID de l'intervalle utilisé pour supprimer des lettres du mot actuellement affiché.
@@ -112,7 +112,7 @@ function step() {
     */
     if (counter >= words[currentIndex].length) {
         clearInterval(stepInterval);
-        delTimeout = setTimeout(() => { delIntervalCallback(); }, 2000);
+        delTimeout = setTimeout(() => { delIntervalCallback(); }, 20);
     }
     /**
      * On ajoute le caractère suivant de la chaîne de caractères dans l'élément HTML "div".
