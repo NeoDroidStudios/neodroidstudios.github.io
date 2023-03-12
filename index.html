@@ -8,8 +8,10 @@
     <title>_home - Web Developer Portfolio</title>
     <link rel="stylesheet" href="./styles/css/theme.css">
     <link rel="stylesheet" href="./styles/css/loading.css">
+    <link rel="stylesheet" href="./styles/css/scroll.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700">
 </head>
+
 <body>
 
     <div class="loader" id="loader">
@@ -22,24 +24,23 @@
         </div>
     </div>
 
-    <div id="header">
-        <p style="color:#FFFFFF">{"&ensp;</p>
-        <div class="typewriter" id="write"></div>
-        <div id="cursor"></div>
-        <p style="color:#FFFFFF">&ensp;"}</p>
+    <div id="main">
+
+        <ul id='infinite-list'></ul>
+
+        <div id="auto-text">
+            <p style="color:#FFFFFF">{"&ensp;</p>
+            <div class="typewriter" id="write"></div>
+            <div id="cursor"></div>
+            <p style="color:#FFFFFF">&ensp;"}</p>
+        </div>
+
     </div>
 
     <script type="text/javascript" src="./scripts/script.js"></script>
-
-    <script>
-        document.getElementById('header').style.display = "none";
-        function chargement() {
-            document.getElementById('loader').remove();
-            document.getElementById('header').style.display = "";
-        }
-        setTimeout(chargement, 3000);
-    </script>
-
+    <script type="text/javascript" src="./scripts/list.js"></script>
+    <script type="text/javascript" src="./scripts/loading.js"></script>
+    
 </body>
 
 </html>

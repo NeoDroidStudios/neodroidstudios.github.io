@@ -19,7 +19,7 @@ body {
     color: #E6DB74;
 }
 
-#header {
+#auto-text {
     display: flex;
     align-items: baseline;
     margin: 15px;
