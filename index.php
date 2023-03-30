@@ -1,5 +1,5 @@
 <?php
-include("vues/v_entete.html");
+//include("vues/v_entete.html");
 
 if (!isset($_REQUEST['uc'])) {
     $uc = 'home';
@@ -12,5 +12,5 @@ if (!isset($_REQUEST['uc'])) {
                 break;
             }
     }
-    include("vues/v_pied.html");
+    //include("vues/v_pied.html");
 }
