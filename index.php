@@ -1,5 +1,5 @@
 <?php
-//include("vues/v_entete.html");
+include("vues/v_entete.html");
 
 if (!isset($_REQUEST['uc'])) {
     $uc = 'home';
