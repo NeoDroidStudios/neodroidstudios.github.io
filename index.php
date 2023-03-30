@@ -1,14 +1,14 @@
 <?php
 include("vues/v_entete.html");
 
-if (!isset($_REQUEST['uc'])) {
-    $uc = 'home';
+if (!isset($_REQUEST['page'])) {
+    $page = 'home';
 } else {
-    $uc = $_REQUEST['uc'];
+    $page = $_REQUEST['page'];
 
-    switch ($uc) {
+    switch ($page) {
         case 'home': {
-                include("./vues/header.html");
+                include("./vues/v_header.html");
                 break;
             }
     }
