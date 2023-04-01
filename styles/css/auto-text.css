@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: clamp(2rem, 2.8vw, 5rem);
+    font-weight: bold;
+}
+
+.typewriter {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #E6DB74;
+}
+
+#auto-text {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0;
+    font-size: clamp(2rem, 2.8vw, 5rem);
+    font-weight: bold;
+}
+
+#auto-text > p {
+    padding: 0;
+    margin: 0;
+}
+
+/* blinking cursor */
+#cursor {
+    line-height: 17px;
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+    width: 4px;
+    height: 30px;
+}
+
+@keyframes blink {
+    0% {
+        background: transparent
+    }
+
+    50% {
+        background: #fff
+    }
+
+    100% {
+        background: transparent
+    }
+}

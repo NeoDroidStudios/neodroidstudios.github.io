@@ -1,0 +1,40 @@
+body {
+    background-color: #212121;
+    color: #d9f8f8;
+    font-family: 'VT323', monospace;
+}
+
+a {
+    text-decoration: none;
+    animation: textChangeColor 5s linear infinite;
+}
+
+.align {
+    margin-left: 50px;
+}
+
+.right {
+    text-align: right;
+}
+
+@keyframes textChangeColor {
+    0% {
+        color: #678d94;
+    }
+
+    25% {
+        color: #208192;
+    }
+
+    50% {
+        color: #036677;
+    }
+
+    75% {
+        color: #208192;
+    }
+
+    100% {
+        color: #678d94;
+    }
+}

@@ -1,0 +1,14 @@
+#infinite-list {
+  width: 200px;
+  height: 300px;
+  user-select: none;
+  color: #808080;
+  margin: 5px;
+  padding: 0px;
+  position: absolute;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
