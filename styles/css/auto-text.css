@@ -17,15 +17,11 @@
 #auto-text {
     display: flex;
     align-items: baseline;
+    margin: -40px;
     justify-content: center;
-    padding: 0;
+    height: 100vh;
     font-size: clamp(2rem, 2.8vw, 5rem);
     font-weight: bold;
-}
-
-#auto-text > p {
-    padding: 0;
-    margin: 0;
 }
 
 /* blinking cursor */
