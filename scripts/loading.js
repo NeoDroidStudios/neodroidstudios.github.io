@@ -1,4 +1,4 @@
-// Vérifie si le cookie "chargementEffectue" existe
+//Création du cookie chargementEffectue afin de ne pas répéter l'animation de chargement
 if (document.cookie.indexOf("chargementEffectue") === -1) {
     // Le cookie n'existe pas, exécute la fonction "chargement" et définit le cookie
     document.getElementById('main').style.display = "none";
@@ -9,7 +9,7 @@ if (document.cookie.indexOf("chargementEffectue") === -1) {
         var now = new Date();
         var time = now.getTime();
         //Expiration après une heure
-        time += 3600 * 1000;
+        time += 600 * 1000;
         now.setTime(time);
         document.cookie = 'chargementEffectue=true; expires=' + now.toUTCString() + ';';
     }
