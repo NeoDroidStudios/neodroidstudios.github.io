@@ -1,19 +1,20 @@
-//Le cookie permet de n'afficher d'une fois la barre de chargement
-if (typeof (cookie) === 'undefined') {   
-    //Permet d'afficher la barre de chargement pendant 3,7 secondes puis d'afficher la page
+// Vérifie si le cookie "chargementEffectue" existe
+if (document.cookie.indexOf("chargementEffectue") === -1) {
+    // Le cookie n'existe pas, exécute la fonction "chargement" et définit le cookie
     document.getElementById('main').style.display = "none";
     function chargement() {
         document.getElementById('loader').remove();
         document.getElementById('main').style.display = "";
+        // Définit le cookie pour indiquer que la fonction a été exécutée
+        var now = new Date();
+        var time = now.getTime();
+        //Expiration après une heure
+        time += 3600 * 1000;
+        now.setTime(time);
+        document.cookie = 'chargementEffectue=true; expires=' + now.toUTCString() + ';';
     }
     setTimeout(chargement, 3700);
-
-    var now = new Date();
-    var time = now.getTime();
-    //Expiration après une heure
-    time += 3600 * 1000;
-    now.setTime(time);
-    document.cookie = 'username=set; expires=' + now.toUTCString() + '; path=/';
 } else {
-    document.getElementById('loader').remove();
+    // Le cookie existe, la fonction a déjà été exécutée, donc affiche directement le contenu
+    document.getElementById('main').style.display = "";
 }
