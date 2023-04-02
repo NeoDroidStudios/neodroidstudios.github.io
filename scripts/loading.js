@@ -17,4 +17,5 @@ if (document.cookie.indexOf("chargementEffectue") === -1) {
 } else {
     // Le cookie existe, la fonction a déjà été exécutée, donc affiche directement le contenu
     document.getElementById('main').style.display = "";
+    document.getElementById('loader').remove();
 }
