@@ -9,6 +9,30 @@ a {
     animation: textChangeColor 5s linear infinite;
 }
 
+#contact ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+
+#contact li {
+    margin: 0 10px;
+}
+
+#contact img {
+    width: 40px;
+}
+
+.footer {
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .align {
     margin-left: 50px;
 }
