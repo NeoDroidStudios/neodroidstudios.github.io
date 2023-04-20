@@ -42,8 +42,9 @@ window.addEventListener('scroll', function () {
   var scrollTop = window.scrollY;
 
   if (windowHeight + scrollTop >= documentHeight) {
-    // Load more items
-    var itemsToLoad = 10;
-    loadMore(itemsToLoad);
+    if (listCounter <= 200) {
+      var itemsToLoad = 10;
+      loadMore(itemsToLoad);
+    }
   }
 });
