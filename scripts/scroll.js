@@ -30,9 +30,9 @@ var loadMore = function (numItems) {
 // Initially load some items.
 var initialItemCount = 40;
 if (window.innerWidth < 768) { // Pour les petits écrans
-  initialItemCount = 10;
-} else if (window.innerWidth < 992) { // Pour les écrans moyens
   initialItemCount = 20;
+} else if (window.innerWidth < 992) { // Pour les écrans moyens
+  initialItemCount = 40;
 }
 loadMore(initialItemCount);
 

@@ -3,7 +3,7 @@
  * 
  * @type {string[]}
  */
-var words = ["_Developpement Web", "_Developpement d'Application", "_Test d'Intrusion Web"];
+var words = ["_Developpement Web", "_Developpement d'Application", "_Service Informatique"];
 
 /**
  * Compteur utilisé pour suivre la position actuelle dans le mot en cours de défilement.
